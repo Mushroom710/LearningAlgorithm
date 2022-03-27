@@ -29,8 +29,27 @@ public class RemoveElement {
         return size;
     }
 
+    /**
+     * @create zhangzhi
+     * @date 2022/3/27
+     * @time 20:38
+     * @description 双指针法。当找到一个 nums[quick] == val 时，
+     * 进入下一个循环，用后面一个元素来覆盖它
+     */
+    public static int solution_two(int[] nums, int val){
+        int slow = 0;
+        for (int quick = 0; quick < nums.length; quick++){
+            if(val != nums[quick]){
+                nums[slow] = nums[quick];
+                slow++;
+            }
+        }
+        return slow;
+    }
+
     public static void main(String[] args) {
-        int[] nums = new int[]{};
-        System.out.println(solution(nums,3));
+        int[] nums = new int[]{3,2,2,3};
+//        System.out.println(solution(nums,3));
+        System.out.println(solution_two(nums,3));
     }
 }
