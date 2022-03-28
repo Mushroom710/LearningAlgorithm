@@ -32,6 +32,7 @@ public class MinimumWindowSubstring {
                 }
             }
         }
+        return "";
     }
 
     public static void main(String[] args) {
