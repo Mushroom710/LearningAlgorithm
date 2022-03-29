@@ -1,4 +1,4 @@
-package LeetCodeSpringRecruitment_2022.third_week;
+package LeetCodeSpringRecruitment_2022.third_week.day_one;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package LeetCodeSpringRecruitment_2022.third_week;
+package LeetCodeSpringRecruitment_2022.third_week.day_one;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,27 +21,27 @@ public class SpiralMatrix {
         int offset = 1;
         int loop = m / 2;
         int mid = m / 2;
-        while (loop > 0){
+        while (loop > 0) {
             int i = startx;
             int j = starty;
-            for(;j < starty + m - offset; j++){
+            for (; j < starty + m - offset; j++) {
                 list.add(matrix[i][j]);
             }
-            for(;i < startx + n - offset; i++){
+            for (; i < startx + n - offset; i++) {
                 list.add(matrix[i][j]);
             }
-            for(;j > starty; j--){
+            for (; j > starty; j--) {
                 list.add(matrix[i][j]);
             }
-            for(;i > startx; i--){
+            for (; i > startx; i--) {
                 list.add(matrix[i][j]);
             }
             startx++;
             starty++;
-            offset +=2;
+            offset += 2;
             loop--;
         }
-        if(m % 2 == 1){
+        if (m % 2 == 1) {
             list.add(matrix[mid][mid]);
         }
         return list;
