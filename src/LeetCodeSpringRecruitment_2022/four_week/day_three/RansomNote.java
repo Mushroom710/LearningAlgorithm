@@ -1,4 +1,4 @@
-package LeetCodeSpringRecruitment_2022.four_week.day_four;
+package LeetCodeSpringRecruitment_2022.four_week.day_three;
 
 /**
  * @DATE 2022/4/6
