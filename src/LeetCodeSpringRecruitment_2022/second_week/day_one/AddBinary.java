@@ -67,6 +67,6 @@ public class AddBinary {
 
 
     public static void main(String[] args) {
-        System.out.println(solution_three("11111001", "1111"));
+        System.out.println(solution_two("11111001", "1111"));
     }
 }
