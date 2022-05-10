@@ -1,4 +1,4 @@
-package LeetCodeSpringRecruitment_2022.nine.day_one;
+package LeetCodeSpringRecruitment_2022.nine_week.day_one;
 
 import java.util.*;
 import java.util.stream.Collectors;
