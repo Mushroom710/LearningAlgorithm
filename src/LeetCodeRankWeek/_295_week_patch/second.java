@@ -11,6 +11,15 @@ import java.util.regex.Pattern;
  */
 public class second {
 
+    public static boolean isDigit(String s){
+        for (int i = 0;i < s.length();i++){
+            if (s.charAt(i) < '0' || s.charAt(i) > '9'){
+                return false;
+            }
+        }
+        return true;
+    }
+
     public static String discountPrices(String sentence, int discount){
         String[] ss = sentence.split(" ");
         StringBuffer sb = new StringBuffer();
@@ -19,9 +28,8 @@ public class second {
                 String price_s = ss[i].substring(1);
                 if (price_s.equals(""))continue;
                 if (price_s.contains("$"))continue;
-                Pattern p = Pattern.compile("[a-z]]");
-                Matcher m = p.matcher(price_s);
-                if (m.matches())continue;
+
+                if (!isDigit(price_s))continue;
                 long price = Long.parseLong(price_s);
                 double d_price = 1.0 * price * (1 - 1.0 * discount / 100);
                 String re = String.format("%.2f",d_price);
@@ -36,7 +44,7 @@ public class second {
     }
 
     public static void main(String[] args) {
-        String sentence = "1 2 $3 4 $5 $6 7 8$ $9 $10$";
+        String sentence = "1 2 $3 4 $5 $6 7 8$ $9 $10$ $nbf";
         System.out.println(discountPrices(sentence,100));
     }
 }
