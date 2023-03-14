@@ -13,10 +13,10 @@ public class SpiralMatrixII {
         int[][] matrix = new int[n][n];
         int loop = n / 2; // 循环几圈
         int mid = n / 2; // 矩阵中间位置单独处理
-        int startx = 0;
-        int starty = 0;
-        int num = 1;
-        int offset = 1; // 一圈填充完之后，有边界收缩 1
+        int startx = 0; // 起始 x
+        int starty = 0; // 起始 y
+        int num = 1; // 填充的数字
+        int offset = 1; // 一圈填充完之后，右边界收缩 1
         int i;
         int j;
         while(loop-- > 0){
