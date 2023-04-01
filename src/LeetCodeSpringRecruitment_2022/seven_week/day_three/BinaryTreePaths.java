@@ -1,6 +1,5 @@
 package LeetCodeSpringRecruitment_2022.seven_week.day_three;
 
-import com.sun.source.tree.Tree;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -58,7 +57,9 @@ public class BinaryTreePaths {
 
 
     public static List<String> solution(TreeNode root){
-        if (root == null)return new ArrayList<>();
+        if (root == null){
+            return new ArrayList<>();
+        }
         List<String> ans = new ArrayList<>();
         List<Integer> path = new ArrayList<>();
         recursion(root,path,ans);

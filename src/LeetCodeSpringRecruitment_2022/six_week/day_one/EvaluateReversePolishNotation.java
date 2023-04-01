@@ -21,10 +21,14 @@ public class EvaluateReversePolishNotation {
                 int num1 = Integer.parseInt(stack.pop());
                 int num2 = Integer.parseInt(stack.pop());
                 switch (tokens[i]) {
-                    case "+" -> stack.push(String.valueOf(num2 + num1));
-                    case "-" -> stack.push(String.valueOf(num2 - num1));
-                    case "/" -> stack.push(String.valueOf(num2 / num1));
-                    case "*" -> stack.push(String.valueOf(num2 * num1));
+                    case "+" :
+                        stack.push(String.valueOf(num2 + num1));
+                    case "-" :
+                        stack.push(String.valueOf(num2 - num1));
+                    case "/" :
+                        stack.push(String.valueOf(num2 / num1));
+                    case "*" :
+                        stack.push(String.valueOf(num2 * num1));
                 }
             }else {
                 stack.push(tokens[i]);
