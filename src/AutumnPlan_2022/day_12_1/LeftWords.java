@@ -5,7 +5,7 @@ package AutumnPlan_2022.day_12_1;
 // @author zhangzhi
 // @description LeetCode 剑指 Offer 58 - II. 左旋转字符串
 
-public class 左旋转字符串 {
+public class LeftWords {
 
     /**
      * 先截取前 n 个字符，然后拼到 s 后，在截取 n 之后的字符！

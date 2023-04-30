@@ -5,7 +5,7 @@ package AutumnPlan_2022.day_11_29;
 // @author zhangzhi
 // @description LeetCode 剑指 Offer 05. 替换空格
 
-public class 替换空格LCOF {
+public class LCOF {
 
     /**
      * 先统计空格个数。然后重新分配字符空间，把空格替换成 %20 即可。
